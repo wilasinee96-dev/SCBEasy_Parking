@@ -18,6 +18,25 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
 
-
+  
+  
+}
+extension ViewController: UITableViewDelegate{
+  
+  
+}
+extension ViewController: UITableViewDataSource{
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 2
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  
+    
+    return UITableViewCell()
+  }
+  
+  
+  
 }
 
