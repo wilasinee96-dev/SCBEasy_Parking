@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44C6B9D0233F3B80006FC94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6B9CF233F3B80006FC94E /* AppDelegate.swift */; };
-		44C6B9D2233F3B80006FC94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6B9D1233F3B80006FC94E /* SceneDelegate.swift */; };
-		44C6B9D4233F3B80006FC94E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6B9D3233F3B80006FC94E /* ContentView.swift */; };
-		44C6B9D6233F3B81006FC94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C6B9D5233F3B81006FC94E /* Assets.xcassets */; };
-		44C6B9D9233F3B81006FC94E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C6B9D8233F3B81006FC94E /* Preview Assets.xcassets */; };
-		44C6B9DC233F3B81006FC94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C6B9DA233F3B81006FC94E /* LaunchScreen.storyboard */; };
-		44C6B9E7233F3B81006FC94E /* Easy_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6B9E6233F3B81006FC94E /* Easy_ParkingTests.swift */; };
-		44C6B9F2233F3B81006FC94E /* Easy_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6B9F1233F3B81006FC94E /* Easy_ParkingUITests.swift */; };
+		44C6BB1E233F4C6B006FC94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB1D233F4C6B006FC94E /* AppDelegate.swift */; };
+		44C6BB20233F4C6B006FC94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB1F233F4C6B006FC94E /* SceneDelegate.swift */; };
+		44C6BB22233F4C6B006FC94E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB21233F4C6B006FC94E /* ViewController.swift */; };
+		44C6BB25233F4C6B006FC94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C6BB23233F4C6B006FC94E /* Main.storyboard */; };
+		44C6BB27233F4C6C006FC94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C6BB26233F4C6C006FC94E /* Assets.xcassets */; };
+		44C6BB2A233F4C6C006FC94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C6BB28233F4C6C006FC94E /* LaunchScreen.storyboard */; };
+		44C6BB35233F4C6C006FC94E /* Easy_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB34233F4C6C006FC94E /* Easy_ParkingTests.swift */; };
+		44C6BB40233F4C6C006FC94E /* Easy_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB3F233F4C6C006FC94E /* Easy_ParkingUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		44C6B9E3233F3B81006FC94E /* PBXContainerItemProxy */ = {
+		44C6BB31233F4C6C006FC94E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 44C6B9C4233F3B80006FC94E /* Project object */;
+			containerPortal = 44C6BB12233F4C6B006FC94E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 44C6B9CB233F3B80006FC94E;
+			remoteGlobalIDString = 44C6BB19233F4C6B006FC94E;
 			remoteInfo = Easy_Parking;
 		};
-		44C6B9EE233F3B81006FC94E /* PBXContainerItemProxy */ = {
+		44C6BB3C233F4C6C006FC94E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 44C6B9C4233F3B80006FC94E /* Project object */;
+			containerPortal = 44C6BB12233F4C6B006FC94E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 44C6B9CB233F3B80006FC94E;
+			remoteGlobalIDString = 44C6BB19233F4C6B006FC94E;
 			remoteInfo = Easy_Parking;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44C6B9CC233F3B80006FC94E /* Easy_Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easy_Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C6B9CF233F3B80006FC94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44C6B9D1233F3B80006FC94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44C6B9D3233F3B80006FC94E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		44C6B9D5233F3B81006FC94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44C6B9D8233F3B81006FC94E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		44C6B9DB233F3B81006FC94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		44C6B9DD233F3B81006FC94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44C6B9E2233F3B81006FC94E /* Easy_ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Easy_ParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C6B9E6233F3B81006FC94E /* Easy_ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_ParkingTests.swift; sourceTree = "<group>"; };
-		44C6B9E8233F3B81006FC94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44C6B9ED233F3B81006FC94E /* Easy_ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Easy_ParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C6B9F1233F3B81006FC94E /* Easy_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_ParkingUITests.swift; sourceTree = "<group>"; };
-		44C6B9F3233F3B81006FC94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C6BB1A233F4C6B006FC94E /* Easy_Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easy_Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C6BB1D233F4C6B006FC94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44C6BB1F233F4C6B006FC94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44C6BB21233F4C6B006FC94E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44C6BB24233F4C6B006FC94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44C6BB26233F4C6C006FC94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44C6BB29233F4C6C006FC94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44C6BB2B233F4C6C006FC94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C6BB30233F4C6C006FC94E /* Easy_ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Easy_ParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C6BB34233F4C6C006FC94E /* Easy_ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_ParkingTests.swift; sourceTree = "<group>"; };
+		44C6BB36233F4C6C006FC94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C6BB3B233F4C6C006FC94E /* Easy_ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Easy_ParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C6BB3F233F4C6C006FC94E /* Easy_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_ParkingUITests.swift; sourceTree = "<group>"; };
+		44C6BB41233F4C6C006FC94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		44C6B9C9233F3B80006FC94E /* Frameworks */ = {
+		44C6BB17233F4C6B006FC94E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C6B9DF233F3B81006FC94E /* Frameworks */ = {
+		44C6BB2D233F4C6C006FC94E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C6B9EA233F3B81006FC94E /* Frameworks */ = {
+		44C6BB38233F4C6C006FC94E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,62 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44C6B9C3233F3B80006FC94E = {
+		44C6BB11233F4C6B006FC94E = {
 			isa = PBXGroup;
 			children = (
-				44C6B9CE233F3B80006FC94E /* Easy_Parking */,
-				44C6B9E5233F3B81006FC94E /* Easy_ParkingTests */,
-				44C6B9F0233F3B81006FC94E /* Easy_ParkingUITests */,
-				44C6B9CD233F3B80006FC94E /* Products */,
+				44C6BB1C233F4C6B006FC94E /* Easy_Parking */,
+				44C6BB33233F4C6C006FC94E /* Easy_ParkingTests */,
+				44C6BB3E233F4C6C006FC94E /* Easy_ParkingUITests */,
+				44C6BB1B233F4C6B006FC94E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		44C6B9CD233F3B80006FC94E /* Products */ = {
+		44C6BB1B233F4C6B006FC94E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44C6B9CC233F3B80006FC94E /* Easy_Parking.app */,
-				44C6B9E2233F3B81006FC94E /* Easy_ParkingTests.xctest */,
-				44C6B9ED233F3B81006FC94E /* Easy_ParkingUITests.xctest */,
+				44C6BB1A233F4C6B006FC94E /* Easy_Parking.app */,
+				44C6BB30233F4C6C006FC94E /* Easy_ParkingTests.xctest */,
+				44C6BB3B233F4C6C006FC94E /* Easy_ParkingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		44C6B9CE233F3B80006FC94E /* Easy_Parking */ = {
+		44C6BB1C233F4C6B006FC94E /* Easy_Parking */ = {
 			isa = PBXGroup;
 			children = (
-				44C6B9CF233F3B80006FC94E /* AppDelegate.swift */,
-				44C6B9D1233F3B80006FC94E /* SceneDelegate.swift */,
-				44C6B9D3233F3B80006FC94E /* ContentView.swift */,
-				44C6B9D5233F3B81006FC94E /* Assets.xcassets */,
-				44C6B9DA233F3B81006FC94E /* LaunchScreen.storyboard */,
-				44C6B9DD233F3B81006FC94E /* Info.plist */,
-				44C6B9D7233F3B81006FC94E /* Preview Content */,
+				44C6BB1D233F4C6B006FC94E /* AppDelegate.swift */,
+				44C6BB1F233F4C6B006FC94E /* SceneDelegate.swift */,
+				44C6BB21233F4C6B006FC94E /* ViewController.swift */,
+				44C6BB23233F4C6B006FC94E /* Main.storyboard */,
+				44C6BB26233F4C6C006FC94E /* Assets.xcassets */,
+				44C6BB28233F4C6C006FC94E /* LaunchScreen.storyboard */,
+				44C6BB2B233F4C6C006FC94E /* Info.plist */,
 			);
 			path = Easy_Parking;
 			sourceTree = "<group>";
 		};
-		44C6B9D7233F3B81006FC94E /* Preview Content */ = {
+		44C6BB33233F4C6C006FC94E /* Easy_ParkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				44C6B9D8233F3B81006FC94E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		44C6B9E5233F3B81006FC94E /* Easy_ParkingTests */ = {
-			isa = PBXGroup;
-			children = (
-				44C6B9E6233F3B81006FC94E /* Easy_ParkingTests.swift */,
-				44C6B9E8233F3B81006FC94E /* Info.plist */,
+				44C6BB34233F4C6C006FC94E /* Easy_ParkingTests.swift */,
+				44C6BB36233F4C6C006FC94E /* Info.plist */,
 			);
 			path = Easy_ParkingTests;
 			sourceTree = "<group>";
 		};
-		44C6B9F0233F3B81006FC94E /* Easy_ParkingUITests */ = {
+		44C6BB3E233F4C6C006FC94E /* Easy_ParkingUITests */ = {
 			isa = PBXGroup;
 			children = (
-				44C6B9F1233F3B81006FC94E /* Easy_ParkingUITests.swift */,
-				44C6B9F3233F3B81006FC94E /* Info.plist */,
+				44C6BB3F233F4C6C006FC94E /* Easy_ParkingUITests.swift */,
+				44C6BB41233F4C6C006FC94E /* Info.plist */,
 			);
 			path = Easy_ParkingUITests;
 			sourceTree = "<group>";
@@ -139,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44C6B9CB233F3B80006FC94E /* Easy_Parking */ = {
+		44C6BB19233F4C6B006FC94E /* Easy_Parking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C6B9F6233F3B81006FC94E /* Build configuration list for PBXNativeTarget "Easy_Parking" */;
+			buildConfigurationList = 44C6BB44233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_Parking" */;
 			buildPhases = (
-				44C6B9C8233F3B80006FC94E /* Sources */,
-				44C6B9C9233F3B80006FC94E /* Frameworks */,
-				44C6B9CA233F3B80006FC94E /* Resources */,
+				44C6BB16233F4C6B006FC94E /* Sources */,
+				44C6BB17233F4C6B006FC94E /* Frameworks */,
+				44C6BB18233F4C6B006FC94E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,69 +145,69 @@
 			);
 			name = Easy_Parking;
 			productName = Easy_Parking;
-			productReference = 44C6B9CC233F3B80006FC94E /* Easy_Parking.app */;
+			productReference = 44C6BB1A233F4C6B006FC94E /* Easy_Parking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		44C6B9E1233F3B81006FC94E /* Easy_ParkingTests */ = {
+		44C6BB2F233F4C6C006FC94E /* Easy_ParkingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C6B9F9233F3B81006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingTests" */;
+			buildConfigurationList = 44C6BB47233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingTests" */;
 			buildPhases = (
-				44C6B9DE233F3B81006FC94E /* Sources */,
-				44C6B9DF233F3B81006FC94E /* Frameworks */,
-				44C6B9E0233F3B81006FC94E /* Resources */,
+				44C6BB2C233F4C6C006FC94E /* Sources */,
+				44C6BB2D233F4C6C006FC94E /* Frameworks */,
+				44C6BB2E233F4C6C006FC94E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				44C6B9E4233F3B81006FC94E /* PBXTargetDependency */,
+				44C6BB32233F4C6C006FC94E /* PBXTargetDependency */,
 			);
 			name = Easy_ParkingTests;
 			productName = Easy_ParkingTests;
-			productReference = 44C6B9E2233F3B81006FC94E /* Easy_ParkingTests.xctest */;
+			productReference = 44C6BB30233F4C6C006FC94E /* Easy_ParkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		44C6B9EC233F3B81006FC94E /* Easy_ParkingUITests */ = {
+		44C6BB3A233F4C6C006FC94E /* Easy_ParkingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C6B9FC233F3B81006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingUITests" */;
+			buildConfigurationList = 44C6BB4A233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingUITests" */;
 			buildPhases = (
-				44C6B9E9233F3B81006FC94E /* Sources */,
-				44C6B9EA233F3B81006FC94E /* Frameworks */,
-				44C6B9EB233F3B81006FC94E /* Resources */,
+				44C6BB37233F4C6C006FC94E /* Sources */,
+				44C6BB38233F4C6C006FC94E /* Frameworks */,
+				44C6BB39233F4C6C006FC94E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				44C6B9EF233F3B81006FC94E /* PBXTargetDependency */,
+				44C6BB3D233F4C6C006FC94E /* PBXTargetDependency */,
 			);
 			name = Easy_ParkingUITests;
 			productName = Easy_ParkingUITests;
-			productReference = 44C6B9ED233F3B81006FC94E /* Easy_ParkingUITests.xctest */;
+			productReference = 44C6BB3B233F4C6C006FC94E /* Easy_ParkingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		44C6B9C4233F3B80006FC94E /* Project object */ = {
+		44C6BB12233F4C6B006FC94E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Z64me;
 				TargetAttributes = {
-					44C6B9CB233F3B80006FC94E = {
+					44C6BB19233F4C6B006FC94E = {
 						CreatedOnToolsVersion = 11.0;
 					};
-					44C6B9E1233F3B81006FC94E = {
+					44C6BB2F233F4C6C006FC94E = {
 						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 44C6B9CB233F3B80006FC94E;
+						TestTargetID = 44C6BB19233F4C6B006FC94E;
 					};
-					44C6B9EC233F3B81006FC94E = {
+					44C6BB3A233F4C6C006FC94E = {
 						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 44C6B9CB233F3B80006FC94E;
+						TestTargetID = 44C6BB19233F4C6B006FC94E;
 					};
 				};
 			};
-			buildConfigurationList = 44C6B9C7233F3B80006FC94E /* Build configuration list for PBXProject "Easy_Parking" */;
+			buildConfigurationList = 44C6BB15233F4C6B006FC94E /* Build configuration list for PBXProject "Easy_Parking" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 44C6B9C3233F3B80006FC94E;
-			productRefGroup = 44C6B9CD233F3B80006FC94E /* Products */;
+			mainGroup = 44C6BB11233F4C6B006FC94E;
+			productRefGroup = 44C6BB1B233F4C6B006FC94E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44C6B9CB233F3B80006FC94E /* Easy_Parking */,
-				44C6B9E1233F3B81006FC94E /* Easy_ParkingTests */,
-				44C6B9EC233F3B81006FC94E /* Easy_ParkingUITests */,
+				44C6BB19233F4C6B006FC94E /* Easy_Parking */,
+				44C6BB2F233F4C6C006FC94E /* Easy_ParkingTests */,
+				44C6BB3A233F4C6C006FC94E /* Easy_ParkingUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		44C6B9CA233F3B80006FC94E /* Resources */ = {
+		44C6BB18233F4C6B006FC94E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C6B9DC233F3B81006FC94E /* LaunchScreen.storyboard in Resources */,
-				44C6B9D9233F3B81006FC94E /* Preview Assets.xcassets in Resources */,
-				44C6B9D6233F3B81006FC94E /* Assets.xcassets in Resources */,
+				44C6BB2A233F4C6C006FC94E /* LaunchScreen.storyboard in Resources */,
+				44C6BB27233F4C6C006FC94E /* Assets.xcassets in Resources */,
+				44C6BB25233F4C6B006FC94E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C6B9E0233F3B81006FC94E /* Resources */ = {
+		44C6BB2E233F4C6C006FC94E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C6B9EB233F3B81006FC94E /* Resources */ = {
+		44C6BB39233F4C6C006FC94E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,52 +255,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		44C6B9C8233F3B80006FC94E /* Sources */ = {
+		44C6BB16233F4C6B006FC94E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C6B9D0233F3B80006FC94E /* AppDelegate.swift in Sources */,
-				44C6B9D2233F3B80006FC94E /* SceneDelegate.swift in Sources */,
-				44C6B9D4233F3B80006FC94E /* ContentView.swift in Sources */,
+				44C6BB22233F4C6B006FC94E /* ViewController.swift in Sources */,
+				44C6BB1E233F4C6B006FC94E /* AppDelegate.swift in Sources */,
+				44C6BB20233F4C6B006FC94E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C6B9DE233F3B81006FC94E /* Sources */ = {
+		44C6BB2C233F4C6C006FC94E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C6B9E7233F3B81006FC94E /* Easy_ParkingTests.swift in Sources */,
+				44C6BB35233F4C6C006FC94E /* Easy_ParkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44C6B9E9233F3B81006FC94E /* Sources */ = {
+		44C6BB37233F4C6C006FC94E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C6B9F2233F3B81006FC94E /* Easy_ParkingUITests.swift in Sources */,
+				44C6BB40233F4C6C006FC94E /* Easy_ParkingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		44C6B9E4233F3B81006FC94E /* PBXTargetDependency */ = {
+		44C6BB32233F4C6C006FC94E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44C6B9CB233F3B80006FC94E /* Easy_Parking */;
-			targetProxy = 44C6B9E3233F3B81006FC94E /* PBXContainerItemProxy */;
+			target = 44C6BB19233F4C6B006FC94E /* Easy_Parking */;
+			targetProxy = 44C6BB31233F4C6C006FC94E /* PBXContainerItemProxy */;
 		};
-		44C6B9EF233F3B81006FC94E /* PBXTargetDependency */ = {
+		44C6BB3D233F4C6C006FC94E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44C6B9CB233F3B80006FC94E /* Easy_Parking */;
-			targetProxy = 44C6B9EE233F3B81006FC94E /* PBXContainerItemProxy */;
+			target = 44C6BB19233F4C6B006FC94E /* Easy_Parking */;
+			targetProxy = 44C6BB3C233F4C6C006FC94E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44C6B9DA233F3B81006FC94E /* LaunchScreen.storyboard */ = {
+		44C6BB23233F4C6B006FC94E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				44C6B9DB233F3B81006FC94E /* Base */,
+				44C6BB24233F4C6B006FC94E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44C6BB28233F4C6C006FC94E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44C6BB29233F4C6C006FC94E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		44C6B9F4233F3B81006FC94E /* Debug */ = {
+		44C6BB42233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		44C6B9F5233F3B81006FC94E /* Release */ = {
+		44C6BB43233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,14 +430,12 @@
 			};
 			name = Release;
 		};
-		44C6B9F7233F3B81006FC94E /* Debug */ = {
+		44C6BB45233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Easy_Parking/Preview Content\"";
 				DEVELOPMENT_TEAM = FX74TJBGSV;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Easy_Parking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,14 +448,12 @@
 			};
 			name = Debug;
 		};
-		44C6B9F8233F3B81006FC94E /* Release */ = {
+		44C6BB46233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Easy_Parking/Preview Content\"";
 				DEVELOPMENT_TEAM = FX74TJBGSV;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Easy_Parking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +466,7 @@
 			};
 			name = Release;
 		};
-		44C6B9FA233F3B81006FC94E /* Debug */ = {
+		44C6BB48233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -492,7 +488,7 @@
 			};
 			name = Debug;
 		};
-		44C6B9FB233F3B81006FC94E /* Release */ = {
+		44C6BB49233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -514,7 +510,7 @@
 			};
 			name = Release;
 		};
-		44C6B9FD233F3B81006FC94E /* Debug */ = {
+		44C6BB4B233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -534,7 +530,7 @@
 			};
 			name = Debug;
 		};
-		44C6B9FE233F3B81006FC94E /* Release */ = {
+		44C6BB4C233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -557,43 +553,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44C6B9C7233F3B80006FC94E /* Build configuration list for PBXProject "Easy_Parking" */ = {
+		44C6BB15233F4C6B006FC94E /* Build configuration list for PBXProject "Easy_Parking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44C6B9F4233F3B81006FC94E /* Debug */,
-				44C6B9F5233F3B81006FC94E /* Release */,
+				44C6BB42233F4C6C006FC94E /* Debug */,
+				44C6BB43233F4C6C006FC94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C6B9F6233F3B81006FC94E /* Build configuration list for PBXNativeTarget "Easy_Parking" */ = {
+		44C6BB44233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_Parking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44C6B9F7233F3B81006FC94E /* Debug */,
-				44C6B9F8233F3B81006FC94E /* Release */,
+				44C6BB45233F4C6C006FC94E /* Debug */,
+				44C6BB46233F4C6C006FC94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C6B9F9233F3B81006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingTests" */ = {
+		44C6BB47233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44C6B9FA233F3B81006FC94E /* Debug */,
-				44C6B9FB233F3B81006FC94E /* Release */,
+				44C6BB48233F4C6C006FC94E /* Debug */,
+				44C6BB49233F4C6C006FC94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C6B9FC233F3B81006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingUITests" */ = {
+		44C6BB4A233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44C6B9FD233F3B81006FC94E /* Debug */,
-				44C6B9FE233F3B81006FC94E /* Release */,
+				44C6BB4B233F4C6C006FC94E /* Debug */,
+				44C6BB4C233F4C6C006FC94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 44C6B9C4233F3B80006FC94E /* Project object */;
+	rootObject = 44C6BB12233F4C6B006FC94E /* Project object */;
 }
