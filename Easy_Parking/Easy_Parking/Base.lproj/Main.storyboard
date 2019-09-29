@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LY5-bJ-lXP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f0i-vn-Hej">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -130,6 +130,32 @@
             </objects>
             <point key="canvasLocation" x="1048" y="867"/>
         </scene>
+        <!--Easy Controller-->
+        <scene sceneID="a1D-2G-m60">
+            <objects>
+                <viewController id="f0i-vn-Hej" customClass="SCBEasyController" customModule="Easy_Parking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kIM-B1-4qI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612.00000000000045"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hbM-b9-pXj" firstAttribute="top" secondItem="kIM-B1-4qI" secondAttribute="top" id="LDk-gb-WZk"/>
+                            <constraint firstItem="ibw-5S-9Sn" firstAttribute="trailing" secondItem="hbM-b9-pXj" secondAttribute="trailing" id="OaY-Bb-m26"/>
+                            <constraint firstItem="ibw-5S-9Sn" firstAttribute="bottom" secondItem="hbM-b9-pXj" secondAttribute="bottom" constant="250" id="QTU-eC-Koa"/>
+                            <constraint firstItem="hbM-b9-pXj" firstAttribute="leading" secondItem="ibw-5S-9Sn" secondAttribute="leading" id="T94-7f-tZx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ibw-5S-9Sn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76Q-sG-YJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="130"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="X7m-Ch-iVt">
             <objects>
@@ -141,12 +167,15 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zge-c8-Z6S"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wsr-Cq-RUH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHQ-1g-eRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+            <point key="canvasLocation" x="171" y="130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SCBEasyHomePage" width="1242" height="1839"/>
+    </resources>
 </document>
