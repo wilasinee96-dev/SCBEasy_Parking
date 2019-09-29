@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f0i-vn-Hej">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhM-n4-ZFX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+            <point key="canvasLocation" x="857" y="151"/>
         </scene>
         <!--Car registation number-->
         <scene sceneID="BQx-0R-7z8">
@@ -112,7 +112,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w68-we-YSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="129.91071428571428"/>
+            <point key="canvasLocation" x="1758" y="151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2LC-YO-bo3">
+            <objects>
+                <navigationController id="GhM-n4-ZFX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RuU-pJ-a7A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="f0i-vn-Hej" kind="relationship" relationship="rootViewController" id="A3I-3Y-ctL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTw-Cx-ctQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="151"/>
         </scene>
         <!--QR CODE-->
         <scene sceneID="9dp-CO-F9d">
@@ -128,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB2-e5-OdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="867"/>
+            <point key="canvasLocation" x="857" y="882"/>
         </scene>
         <!--Easy Controller-->
         <scene sceneID="a1D-2G-m60">
@@ -139,11 +155,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="612.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-iU-NEg">
+                                <rect key="frame" x="0.0" y="613" width="414" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="GRm-Kf-Uex"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Screen Shot 2562-09-29 at 22.04.18"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="sQb-hB-ihQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ibw-5S-9Sn" firstAttribute="trailing" secondItem="a8y-iU-NEg" secondAttribute="trailing" id="3eo-tV-pXz"/>
+                            <constraint firstItem="a8y-iU-NEg" firstAttribute="leading" secondItem="ibw-5S-9Sn" secondAttribute="leading" id="HMy-Sa-eIc"/>
+                            <constraint firstItem="a8y-iU-NEg" firstAttribute="top" secondItem="hbM-b9-pXj" secondAttribute="bottom" constant="1" id="JvV-Nh-3gk"/>
                             <constraint firstItem="hbM-b9-pXj" firstAttribute="top" secondItem="kIM-B1-4qI" secondAttribute="top" id="LDk-gb-WZk"/>
                             <constraint firstItem="ibw-5S-9Sn" firstAttribute="trailing" secondItem="hbM-b9-pXj" secondAttribute="trailing" id="OaY-Bb-m26"/>
                             <constraint firstItem="ibw-5S-9Sn" firstAttribute="bottom" secondItem="hbM-b9-pXj" secondAttribute="bottom" constant="250" id="QTU-eC-Koa"/>
@@ -151,31 +180,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ibw-5S-9Sn"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BqN-af-zZh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76Q-sG-YJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-836" y="130"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="X7m-Ch-iVt">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LY5-bJ-lXP" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3LO-qi-puY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wsr-Cq-RUH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CHQ-1g-eRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="171" y="130"/>
+            <point key="canvasLocation" x="-28" y="151"/>
         </scene>
     </scenes>
     <resources>
         <image name="SCBEasyHomePage" width="1242" height="1839"/>
+        <image name="Screen Shot 2562-09-29 at 22.04.18" width="828" height="262"/>
     </resources>
 </document>
