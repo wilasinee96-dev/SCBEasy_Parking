@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="856.52173913043487" y="150.66964285714286"/>
         </scene>
-        <!--Car registation number-->
+        <!--Car Registation-->
         <scene sceneID="BQx-0R-7z8">
             <objects>
                 <viewController id="Ox1-gQ-av9" sceneMemberID="viewController">
@@ -113,7 +113,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hnV-gh-Ndw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Car registation number" id="PcC-vm-8u9"/>
+                    <navigationItem key="navigationItem" title="Car Registation" id="PcC-vm-8u9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w68-we-YSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,6 +126,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RuU-pJ-a7A">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.41960784313725491" green="0.21176470588235294" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="barTintColor" red="0.41817590594291687" green="0.21101555228233337" blue="0.73337918519973755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="f0i-vn-Hej" kind="relationship" relationship="rootViewController" id="A3I-3Y-ctL"/>
@@ -173,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="612.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-iU-NEg">
                                 <rect key="frame" x="0.0" y="613" width="414" height="130"/>
