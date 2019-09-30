@@ -18,10 +18,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oT4-R6-n3r">
                                 <rect key="frame" x="0.0" y="107" width="414" height="755"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hs8-MV-1mw">
-                                    <rect key="frame" x="0.0" y="145" width="414" height="44"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hs8-MV-1mw">
+                                    <rect key="frame" x="0.0" y="145" width="414" height="94"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="+"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" image="plus.circle" catalog="system">
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="thin"/>
+                                    </state>
+                                    <state key="selected" image="plus.circle.fill" catalog="system"/>
+                                    <state key="highlighted" image="plus.circle.fill" catalog="system"/>
                                     <connections>
                                         <action selector="Btn_ForAddCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xng-XF-IBN"/>
                                     </connections>
@@ -51,21 +56,21 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efs-Ml-FbR">
-                                                    <rect key="frame" x="298" y="11" width="85" height="67"/>
+                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efs-Ml-FbR">
+                                                    <rect key="frame" x="354" y="29.5" width="30" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="85" id="ITv-jf-Wd2"/>
+                                                        <constraint firstAttribute="width" constant="30" id="ITv-jf-Wd2"/>
+                                                        <constraint firstAttribute="height" constant="30" id="t1o-WV-IEq"/>
                                                     </constraints>
-                                                    <state key="normal" title="QR"/>
+                                                    <state key="normal" title="QR" image="QrCodeIcon"/>
                                                     <connections>
                                                         <action selector="btn_ShowQR:" destination="TJ6-0N-ebj" eventType="touchUpInside" id="QCs-0W-QvN"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="efs-Ml-FbR" secondAttribute="trailing" constant="11" id="0bH-eC-Lcd"/>
-                                                <constraint firstItem="91Z-pO-dVs" firstAttribute="centerY" secondItem="efs-Ml-FbR" secondAttribute="centerY" id="SgD-nu-gEG"/>
-                                                <constraint firstItem="efs-Ml-FbR" firstAttribute="top" secondItem="mPd-cv-Kys" secondAttribute="topMargin" id="eoY-s7-qgc"/>
+                                                <constraint firstItem="efs-Ml-FbR" firstAttribute="centerY" secondItem="mPd-cv-Kys" secondAttribute="centerY" id="CUY-oQ-33a"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="efs-Ml-FbR" secondAttribute="trailing" constant="10" id="KGs-ea-TGh"/>
                                                 <constraint firstItem="91Z-pO-dVs" firstAttribute="centerY" secondItem="mPd-cv-Kys" secondAttribute="centerY" id="vho-Ui-CRg"/>
                                                 <constraint firstItem="91Z-pO-dVs" firstAttribute="leading" secondItem="mPd-cv-Kys" secondAttribute="leadingMargin" constant="17" id="zG0-LI-5vI"/>
                                             </constraints>
@@ -96,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="151"/>
+            <point key="canvasLocation" x="856.52173913043487" y="150.66964285714286"/>
         </scene>
         <!--Car registation number-->
         <scene sceneID="BQx-0R-7z8">
@@ -137,7 +142,20 @@
                     <view key="view" contentMode="scaleToFill" id="wJX-7p-8nL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QrCoedImage" translatesAutoresizingMaskIntoConstraints="NO" id="iI8-Jq-ofh">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="SvE-Jg-0Pu"/>
+                                    <constraint firstAttribute="height" constant="300" id="yOH-vk-Abl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iI8-Jq-ofh" firstAttribute="centerX" secondItem="wJX-7p-8nL" secondAttribute="centerX" id="ChP-V4-fq7"/>
+                            <constraint firstItem="iI8-Jq-ofh" firstAttribute="centerY" secondItem="wJX-7p-8nL" secondAttribute="centerY" id="lkQ-Lj-s9P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ksu-QF-aM6"/>
                     </view>
                     <navigationItem key="navigationItem" title="QR CODE" id="0cG-QL-Cgl"/>
@@ -154,11 +172,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="612.00000000000045"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-iU-NEg">
-                                <rect key="frame" x="0.0" y="612" width="414" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-iU-NEg">
+                                <rect key="frame" x="0.0" y="613" width="414" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="GRm-Kf-Uex"/>
                                 </constraints>
@@ -188,7 +206,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="QrCodeIcon" width="200" height="200"/>
+        <image name="QrCoedImage" width="512" height="512"/>
         <image name="SCBEasyHomePage" width="1242" height="1839"/>
         <image name="SCBEasyParkImage" width="828" height="262"/>
+        <image name="plus.circle" catalog="system" width="64" height="62"/>
+        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
 </document>
