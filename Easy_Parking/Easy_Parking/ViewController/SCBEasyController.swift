@@ -21,6 +21,10 @@ class SCBEasyController: UIViewController {
 
       // Hide the navigation bar on the this view controller
       self.navigationController?.setNavigationBarHidden(true, animated: animated)
+      
+      //Set the navigation back button
+      self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
   }
 
   override func viewWillDisappear(_ animated: Bool) {

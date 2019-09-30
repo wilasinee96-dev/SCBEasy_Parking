@@ -18,6 +18,15 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
+  
+  override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      
+      //Set the navigation back button
+      self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
+  }
+  
   @IBAction func Btn_ForAddCar(_ sender: Any) {
     performSegue(withIdentifier: "pageRegister", sender: Any?.self)
     
