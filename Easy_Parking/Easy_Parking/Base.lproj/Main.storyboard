@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhM-n4-ZFX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhM-n4-ZFX">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,19 +20,17 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oT4-R6-n3r">
                                 <rect key="frame" x="10" y="103" width="394" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.41817590589999998" green="0.21101555229999999" blue="0.73337918520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexColor" red="0.41817590589999998" green="0.21101555229999999" blue="0.73337918520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hs8-MV-1mw" customClass="Button" customModule="Easy_Parking" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="145" width="394" height="83"/>
+                                    <rect key="frame" x="0.0" y="117" width="394" height="83"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="tintColor" red="0.41960784309999999" green="0.21176470589999999" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" image="plus.circle" catalog="system">
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="thin"/>
-                                    </state>
-                                    <state key="selected" image="plus.circle.fill" catalog="system"/>
-                                    <state key="highlighted" image="plus.circle.fill" catalog="system"/>
+                                    <state key="normal" image="plus.circle"/>
+                                    <state key="selected" image="plus.circle.fill"/>
+                                    <state key="highlighted" image="plus.circle.fill"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                             <real key="value" value="1"/>
@@ -50,7 +51,7 @@
                                         <rect key="frame" x="0.0" y="28" width="394" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TJ6-0N-ebj" id="mPd-cv-Kys">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="88.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="91Z-pO-dVs">
@@ -100,7 +101,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oT4-R6-n3r" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0kB-wf-0X0"/>
                             <constraint firstAttribute="trailing" secondItem="oT4-R6-n3r" secondAttribute="trailing" constant="10" id="893-s2-EaH"/>
@@ -120,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="856.52173913043487" y="150.66964285714286"/>
         </scene>
-        <!--Car Registration-->
+        <!--เพิ่มรถ-->
         <scene sceneID="BQx-0R-7z8">
             <objects>
                 <viewController id="Ox1-gQ-av9" customClass="CarRegistationNumberController" customModule="Easy_Parking" customModuleProvider="target" sceneMemberID="viewController">
@@ -190,10 +191,10 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hnV-gh-Ndw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Car Registration" id="PcC-vm-8u9"/>
+                    <navigationItem key="navigationItem" title="เพิ่มรถ" id="PcC-vm-8u9"/>
                     <connections>
                         <outlet property="provincePicker" destination="B6N-fH-xQl" id="gON-Pj-lpb"/>
                         <outlet property="provinceTextField" destination="huA-fT-hY9" id="qTJ-TZ-MP9"/>
@@ -207,7 +208,7 @@
         <scene sceneID="2LC-YO-bo3">
             <objects>
                 <navigationController id="GhM-n4-ZFX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="arrow.left" catalog="system" backIndicatorTransitionMaskImage="arrow.left" id="RuU-pJ-a7A">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="arrow.left" backIndicatorTransitionMaskImage="arrow.left" id="RuU-pJ-a7A">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.41960784313725491" green="0.21176470588235294" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -226,7 +227,7 @@
             </objects>
             <point key="canvasLocation" x="-868" y="151"/>
         </scene>
-        <!--QR CODE-->
+        <!--QR ของฉัน-->
         <scene sceneID="9dp-CO-F9d">
             <objects>
                 <viewController id="ZfW-yR-xH5" customClass="ViewQRController" customModule="Easy_Parking" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,38 +235,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QrCoedImage" translatesAutoresizingMaskIntoConstraints="NO" id="iI8-Jq-ofh">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="QrCoedImage" translatesAutoresizingMaskIntoConstraints="NO" id="iI8-Jq-ofh">
+                                <rect key="frame" x="57" y="220" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="SvE-Jg-0Pu"/>
                                     <constraint firstAttribute="height" constant="300" id="yOH-vk-Abl"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ยอดเงินคงเหลือ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5e-NQ-Yn1">
+                                <rect key="frame" x="65" y="587" width="122" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000000000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLA-1k-gQe">
+                                <rect key="frame" x="220" y="587" width="130" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iI8-Jq-ofh" firstAttribute="centerX" secondItem="wJX-7p-8nL" secondAttribute="centerX" id="ChP-V4-fq7"/>
                             <constraint firstItem="iI8-Jq-ofh" firstAttribute="centerY" secondItem="wJX-7p-8nL" secondAttribute="centerY" id="lkQ-Lj-s9P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ksu-QF-aM6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="QR CODE" id="0cG-QL-Cgl"/>
+                    <navigationItem key="navigationItem" title="QR ของฉัน" id="0cG-QL-Cgl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB2-e5-OdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="-268"/>
+            <point key="canvasLocation" x="2679.7101449275365" y="-268.52678571428572"/>
         </scene>
-        <!--Car Registation Detail-->
+        <!--ก พ 1245-->
         <scene sceneID="Bwk-C0-lUF">
             <objects>
                 <viewController id="6gp-Nb-g5h" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LPd-Lh-O0f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ebe-em-cuu"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Car Registation Detail" id="5gb-dj-pDm"/>
+                    <navigationItem key="navigationItem" title="ก พ 1245" id="5gb-dj-pDm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c11-0H-woB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,7 +308,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ibw-5S-9Sn" firstAttribute="trailing" secondItem="a8y-iU-NEg" secondAttribute="trailing" id="3eo-tV-pXz"/>
                             <constraint firstItem="a8y-iU-NEg" firstAttribute="leading" secondItem="ibw-5S-9Sn" secondAttribute="leading" id="HMy-Sa-eIc"/>
@@ -317,8 +332,8 @@
         <image name="QrCoedImage" width="512" height="512"/>
         <image name="SCBEasyHomePage" width="1242" height="1839"/>
         <image name="SCBEasyParkImage" width="828" height="262"/>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
-        <image name="plus.circle" catalog="system" width="64" height="62"/>
-        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
+        <image name="arrow.left" width="64" height="48"/>
+        <image name="plus.circle" width="64" height="62"/>
+        <image name="plus.circle.fill" width="64" height="62"/>
     </resources>
 </document>
