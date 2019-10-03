@@ -28,7 +28,7 @@
                                     <state key="normal" image="plus.circle" catalog="system">
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
                                     </state>
-                                    <state key="selected" image="plus.circle.fill"/>
+                                    <state key="selected" image="plus.circle.fill" catalog="system"/>
                                     <state key="highlighted" image="plus.circle.fill"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -92,7 +92,6 @@
                                         <connections>
                                             <outlet property="carNumber" destination="pPN-Yb-t8H" id="wWp-OJ-W7X"/>
                                             <outlet property="carProvince" destination="SJ7-Hg-nYz" id="4bW-nn-up7"/>
-                                            <segue destination="6gp-Nb-g5h" kind="show" id="ay4-Nw-WdG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -116,6 +115,7 @@
                         <outlet property="tableViewControl" destination="oT4-R6-n3r" id="q5P-p1-kaK"/>
                         <segue destination="Ox1-gQ-av9" kind="show" identifier="pageRegister" id="QCG-XW-Vrv"/>
                         <segue destination="ZfW-yR-xH5" kind="show" identifier="pageQR" id="eZ7-Jo-ZXP"/>
+                        <segue destination="6gp-Nb-g5h" kind="show" identifier="showDetail" id="EBt-kp-bqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -278,7 +278,7 @@
         <!--ก พ 1245-->
         <scene sceneID="Bwk-C0-lUF">
             <objects>
-                <viewController id="6gp-Nb-g5h" sceneMemberID="viewController">
+                <viewController id="6gp-Nb-g5h" customClass="CarRegistrationDetail" customModule="Easy_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LPd-Lh-O0f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,16 +312,22 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="sQb-hB-ihQ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menubar" translatesAutoresizingMaskIntoConstraints="NO" id="XHv-Gf-vjj">
+                                <rect key="frame" x="0.0" y="708" width="414" height="188"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ibw-5S-9Sn" firstAttribute="trailing" secondItem="a8y-iU-NEg" secondAttribute="trailing" id="3eo-tV-pXz"/>
                             <constraint firstItem="a8y-iU-NEg" firstAttribute="leading" secondItem="ibw-5S-9Sn" secondAttribute="leading" id="HMy-Sa-eIc"/>
+                            <constraint firstItem="XHv-Gf-vjj" firstAttribute="leading" secondItem="ibw-5S-9Sn" secondAttribute="leading" id="I84-8I-V6V"/>
                             <constraint firstItem="a8y-iU-NEg" firstAttribute="top" secondItem="hbM-b9-pXj" secondAttribute="bottom" constant="1" id="JvV-Nh-3gk"/>
                             <constraint firstItem="hbM-b9-pXj" firstAttribute="top" secondItem="kIM-B1-4qI" secondAttribute="top" id="LDk-gb-WZk"/>
                             <constraint firstItem="ibw-5S-9Sn" firstAttribute="trailing" secondItem="hbM-b9-pXj" secondAttribute="trailing" id="OaY-Bb-m26"/>
                             <constraint firstItem="ibw-5S-9Sn" firstAttribute="bottom" secondItem="hbM-b9-pXj" secondAttribute="bottom" constant="250" id="QTU-eC-Koa"/>
                             <constraint firstItem="hbM-b9-pXj" firstAttribute="leading" secondItem="ibw-5S-9Sn" secondAttribute="leading" id="T94-7f-tZx"/>
+                            <constraint firstItem="XHv-Gf-vjj" firstAttribute="trailing" secondItem="ibw-5S-9Sn" secondAttribute="trailing" id="nWJ-Wr-BMg"/>
+                            <constraint firstAttribute="bottom" secondItem="XHv-Gf-vjj" secondAttribute="bottom" id="u6C-CX-8C7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ibw-5S-9Sn"/>
                     </view>
@@ -329,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76Q-sG-YJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="151"/>
+            <point key="canvasLocation" x="-28.985507246376812" y="150.66964285714286"/>
         </scene>
     </scenes>
     <resources>
@@ -338,7 +344,9 @@
         <image name="SCBEasyHomePage" width="1242" height="1839"/>
         <image name="SCBEasyParkImage" width="828" height="262"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="menubar" width="810" height="94"/>
         <image name="plus.circle" catalog="system" width="64" height="62"/>
         <image name="plus.circle.fill" width="64" height="62"/>
+        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
 </document>

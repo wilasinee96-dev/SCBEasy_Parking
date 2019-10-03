@@ -37,19 +37,29 @@ class ViewController: UIViewController {
   
   @IBAction func Btn_ForAddCar(_ sender: Any) {
     performSegue(withIdentifier: "pageRegister", sender: Any?.self)
-    
   }
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //
+    if segue.identifier == "showDetail",
+      let viewController = segue.destination as? CarRegistrationDetail,
+      let carItem = sender as? CarItem {
+      viewController.carTitle = carItem.carRegistration
+    }
   }
-  
-  
   
 }
 extension ViewController: UITableViewDelegate{
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 90.0//Choose your custom row height //fix.
   }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if carItemData.indices.contains(indexPath.row){
+      let carItem = carItemData[indexPath.row]
+      self.performSegue(withIdentifier: "showDetail", sender: carItem)
+    }
+  }
+
+  //swipe to delete
   
 }
 extension ViewController: UITableViewDataSource{
@@ -68,8 +78,5 @@ extension ViewController: UITableViewDataSource{
     cell.carNumber.text = carItemData[indexPath.row].carRegistration
   return cell
   }
-  
-  
-  
 }
 

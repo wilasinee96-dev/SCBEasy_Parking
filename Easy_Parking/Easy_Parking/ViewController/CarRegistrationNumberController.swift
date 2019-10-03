@@ -17,8 +17,9 @@ class CarRegistrationNumberController: UIViewController {
   
   @IBAction func tappedRegisterCar(_ sender: Any) {
     if let carProvince = provinceTextField.text, !carProvince.isEmpty, let carNumber = carNumberTextField.text, !carNumber.isEmpty {
-         carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
-      }
+      carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
+      navigationController?.popViewController(animated: true)
+    }
   
   }
   

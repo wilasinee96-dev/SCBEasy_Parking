@@ -20,6 +20,7 @@
 		44C6BB56233F6365006FC94E /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB55233F6365006FC94E /* CarListTableViewCell.swift */; };
 		7409C63823425EE700767A32 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409C63723425EE700767A32 /* Button.swift */; };
 		7453C4A92345029A001F9A96 /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453C4A82345029A001F9A96 /* CarItem.swift */; };
+		7490CF872345D2860042938C /* CarRegistrationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490CF862345D2860042938C /* CarRegistrationDetail.swift */; };
 		74E054162340CC4E00D22706 /* SCBEasyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E054152340CC4E00D22706 /* SCBEasyController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		44C6BB55233F6365006FC94E /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
 		7409C63723425EE700767A32 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7453C4A82345029A001F9A96 /* CarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItem.swift; sourceTree = "<group>"; };
+		7490CF862345D2860042938C /* CarRegistrationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRegistrationDetail.swift; sourceTree = "<group>"; };
 		74E054152340CC4E00D22706 /* SCBEasyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBEasyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				74E054152340CC4E00D22706 /* SCBEasyController.swift */,
 				7409C63723425EE700767A32 /* Button.swift */,
 				7453C4A82345029A001F9A96 /* CarItem.swift */,
+				7490CF862345D2860042938C /* CarRegistrationDetail.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				74E054162340CC4E00D22706 /* SCBEasyController.swift in Sources */,
 				44C6BB52233F53E8006FC94E /* ViewQRController.swift in Sources */,
 				44C6BB22233F4C6B006FC94E /* ViewController.swift in Sources */,
+				7490CF872345D2860042938C /* CarRegistrationDetail.swift in Sources */,
 				7409C63823425EE700767A32 /* Button.swift in Sources */,
 				44C6BB1E233F4C6B006FC94E /* AppDelegate.swift in Sources */,
 				44C6BB54233F54B1006FC94E /* CarRegistrationNumberController.swift in Sources */,
