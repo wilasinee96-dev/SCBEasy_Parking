@@ -482,7 +482,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="612.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-iU-NEg">
                                 <rect key="frame" x="0.0" y="613" width="414" height="130"/>
@@ -495,7 +495,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menubar" translatesAutoresizingMaskIntoConstraints="NO" id="XHv-Gf-vjj">
-                                <rect key="frame" x="0.0" y="802" width="414" height="94"/>
+                                <rect key="frame" x="0.0" y="708" width="414" height="188"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -530,7 +530,7 @@
         <image name="folder" catalog="system" width="64" height="48"/>
         <image name="menubar" width="810" height="94"/>
         <image name="plus.circle" catalog="system" width="64" height="62"/>
-        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
         <image name="plus.circle.fill" width="64" height="62"/>
+        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
 </document>

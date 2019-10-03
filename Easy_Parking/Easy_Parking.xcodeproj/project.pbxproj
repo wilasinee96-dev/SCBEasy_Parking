@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,12 @@
 		7409C63823425EE700767A32 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409C63723425EE700767A32 /* Button.swift */; };
 		7453C4A92345029A001F9A96 /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453C4A82345029A001F9A96 /* CarItem.swift */; };
 		7490CF872345D2860042938C /* CarRegistrationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490CF862345D2860042938C /* CarRegistrationDetail.swift */; };
+		7490CF8F23464F8A0042938C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490CF8E23464F8A0042938C /* APIManager.swift */; };
+		74ABD35F2346550B00CFECAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74ABD35E2346550B00CFECAD /* GoogleService-Info.plist */; };
 		74E054162340CC4E00D22706 /* SCBEasyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E054152340CC4E00D22706 /* SCBEasyController.swift */; };
+		8AA64F3C1A6D68DC5CBD6FFC /* Pods_Easy_Parking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A8A069D5C054650724DF04 /* Pods_Easy_Parking.framework */; };
+		B0DD9A8B87020F78B983E376 /* Pods_Easy_ParkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100B263188714983EE93F874 /* Pods_Easy_ParkingTests.framework */; };
+		BBB29C42C2EF8E44790D92A3 /* Pods_Easy_ParkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE9A4874AFC96A03CEC58B7 /* Pods_Easy_ParkingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A8A069D5C054650724DF04 /* Pods_Easy_Parking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Parking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		100B263188714983EE93F874 /* Pods_Easy_ParkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_ParkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D58E9585FAD1665143D739 /* Pods-Easy_Parking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_Parking.debug.xcconfig"; path = "Target Support Files/Pods-Easy_Parking/Pods-Easy_Parking.debug.xcconfig"; sourceTree = "<group>"; };
 		44C6BB1A233F4C6B006FC94E /* Easy_Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easy_Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C6BB1D233F4C6B006FC94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C6BB1F233F4C6B006FC94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +67,18 @@
 		44C6BB51233F53E8006FC94E /* ViewQRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewQRController.swift; sourceTree = "<group>"; };
 		44C6BB53233F54B1006FC94E /* CarRegistrationNumberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRegistrationNumberController.swift; sourceTree = "<group>"; };
 		44C6BB55233F6365006FC94E /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
+		5FFC34785C214D24478EBD37 /* Pods-Easy_ParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_ParkingTests.release.xcconfig"; path = "Target Support Files/Pods-Easy_ParkingTests/Pods-Easy_ParkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		7409C63723425EE700767A32 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7453C4A82345029A001F9A96 /* CarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItem.swift; sourceTree = "<group>"; };
 		7490CF862345D2860042938C /* CarRegistrationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRegistrationDetail.swift; sourceTree = "<group>"; };
+		7490CF8E23464F8A0042938C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		74ABD35E2346550B00CFECAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74E054152340CC4E00D22706 /* SCBEasyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBEasyController.swift; sourceTree = "<group>"; };
+		7E993F44CBBB4DE8820C34C5 /* Pods-Easy_Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_Parking.release.xcconfig"; path = "Target Support Files/Pods-Easy_Parking/Pods-Easy_Parking.release.xcconfig"; sourceTree = "<group>"; };
+		CE512F76FE1DEC813EE12044 /* Pods-Easy_ParkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_ParkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Easy_ParkingUITests/Pods-Easy_ParkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D36523E528C754C89F6100EB /* Pods-Easy_ParkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_ParkingUITests.release.xcconfig"; path = "Target Support Files/Pods-Easy_ParkingUITests/Pods-Easy_ParkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E92F9DB951DF18C411941341 /* Pods-Easy_ParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_ParkingTests.debug.xcconfig"; path = "Target Support Files/Pods-Easy_ParkingTests/Pods-Easy_ParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFE9A4874AFC96A03CEC58B7 /* Pods_Easy_ParkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_ParkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA64F3C1A6D68DC5CBD6FFC /* Pods_Easy_Parking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DD9A8B87020F78B983E376 /* Pods_Easy_ParkingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB29C42C2EF8E44790D92A3 /* Pods_Easy_ParkingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05403D66C9DEC66464894C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04A8A069D5C054650724DF04 /* Pods_Easy_Parking.framework */,
+				100B263188714983EE93F874 /* Pods_Easy_ParkingTests.framework */,
+				FFE9A4874AFC96A03CEC58B7 /* Pods_Easy_ParkingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44C6BB11233F4C6B006FC94E = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +126,8 @@
 				44C6BB33233F4C6C006FC94E /* Easy_ParkingTests */,
 				44C6BB3E233F4C6C006FC94E /* Easy_ParkingUITests */,
 				44C6BB1B233F4C6B006FC94E /* Products */,
+				DBE95C6FEC367AB9FF051034 /* Pods */,
+				05403D66C9DEC66464894C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +144,8 @@
 		44C6BB1C233F4C6B006FC94E /* Easy_Parking */ = {
 			isa = PBXGroup;
 			children = (
+				74ABD35E2346550B00CFECAD /* GoogleService-Info.plist */,
+				7490CF8D23464F6D0042938C /* Service */,
 				7490CF8923461DBF0042938C /* Model */,
 				7490CF8823461DA30042938C /* Styled */,
 				44C6BB50233F539E006FC94E /* ViewController */,
@@ -181,6 +214,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7490CF8D23464F6D0042938C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7490CF8E23464F8A0042938C /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DBE95C6FEC367AB9FF051034 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43D58E9585FAD1665143D739 /* Pods-Easy_Parking.debug.xcconfig */,
+				7E993F44CBBB4DE8820C34C5 /* Pods-Easy_Parking.release.xcconfig */,
+				E92F9DB951DF18C411941341 /* Pods-Easy_ParkingTests.debug.xcconfig */,
+				5FFC34785C214D24478EBD37 /* Pods-Easy_ParkingTests.release.xcconfig */,
+				CE512F76FE1DEC813EE12044 /* Pods-Easy_ParkingUITests.debug.xcconfig */,
+				D36523E528C754C89F6100EB /* Pods-Easy_ParkingUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44C6BB44233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_Parking" */;
 			buildPhases = (
+				9527CFD30A44B277F4611FF6 /* [CP] Check Pods Manifest.lock */,
 				44C6BB16233F4C6B006FC94E /* Sources */,
 				44C6BB17233F4C6B006FC94E /* Frameworks */,
 				44C6BB18233F4C6B006FC94E /* Resources */,
+				5F23CBCA5192551A2A91F5C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44C6BB47233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingTests" */;
 			buildPhases = (
+				7CD95EB48BE00607B664FC33 /* [CP] Check Pods Manifest.lock */,
 				44C6BB2C233F4C6C006FC94E /* Sources */,
 				44C6BB2D233F4C6C006FC94E /* Frameworks */,
 				44C6BB2E233F4C6C006FC94E /* Resources */,
@@ -223,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44C6BB4A233F4C6C006FC94E /* Build configuration list for PBXNativeTarget "Easy_ParkingUITests" */;
 			buildPhases = (
+				7B6A7392109E9B449EF2FDC9 /* [CP] Check Pods Manifest.lock */,
 				44C6BB37233F4C6C006FC94E /* Sources */,
 				44C6BB38233F4C6C006FC94E /* Frameworks */,
 				44C6BB39233F4C6C006FC94E /* Resources */,
@@ -286,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C6BB2A233F4C6C006FC94E /* LaunchScreen.storyboard in Resources */,
+				74ABD35F2346550B00CFECAD /* GoogleService-Info.plist in Resources */,
 				44C6BB27233F4C6C006FC94E /* Assets.xcassets in Resources */,
 				44C6BB25233F4C6B006FC94E /* Main.storyboard in Resources */,
 			);
@@ -307,6 +366,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F23CBCA5192551A2A91F5C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy_Parking/Pods-Easy_Parking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy_Parking/Pods-Easy_Parking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easy_Parking/Pods-Easy_Parking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B6A7392109E9B449EF2FDC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy_ParkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD95EB48BE00607B664FC33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy_ParkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9527CFD30A44B277F4611FF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy_Parking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44C6BB16233F4C6B006FC94E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,6 +461,7 @@
 				74E054162340CC4E00D22706 /* SCBEasyController.swift in Sources */,
 				44C6BB52233F53E8006FC94E /* ViewQRController.swift in Sources */,
 				44C6BB22233F4C6B006FC94E /* ViewController.swift in Sources */,
+				7490CF8F23464F8A0042938C /* APIManager.swift in Sources */,
 				7490CF872345D2860042938C /* CarRegistrationDetail.swift in Sources */,
 				7409C63823425EE700767A32 /* Button.swift in Sources */,
 				44C6BB1E233F4C6B006FC94E /* AppDelegate.swift in Sources */,
@@ -492,6 +638,7 @@
 		};
 		44C6BB45233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D58E9585FAD1665143D739 /* Pods-Easy_Parking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +657,7 @@
 		};
 		44C6BB46233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E993F44CBBB4DE8820C34C5 /* Pods-Easy_Parking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +676,7 @@
 		};
 		44C6BB48233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92F9DB951DF18C411941341 /* Pods-Easy_ParkingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +699,7 @@
 		};
 		44C6BB49233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFC34785C214D24478EBD37 /* Pods-Easy_ParkingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +722,7 @@
 		};
 		44C6BB4B233F4C6C006FC94E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE512F76FE1DEC813EE12044 /* Pods-Easy_ParkingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +743,7 @@
 		};
 		44C6BB4C233F4C6C006FC94E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D36523E528C754C89F6100EB /* Pods-Easy_ParkingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

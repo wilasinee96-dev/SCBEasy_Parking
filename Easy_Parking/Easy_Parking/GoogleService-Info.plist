@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>679101694537-grkeg3peonu18u6se6ov69t6pa3216dv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.679101694537-grkeg3peonu18u6se6ov69t6pa3216dv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA134JduO0g185U6yLSVZo-R57hffCm0xc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>679101694537</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.SCB.Easy-Parking</string>
+	<key>PROJECT_ID</key>
+	<string>easypark-6f1ce</string>
+	<key>STORAGE_BUCKET</key>
+	<string>easypark-6f1ce.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:679101694537:ios:e777649a5f3e5476f9b598</string>
+	<key>DATABASE_URL</key>
+	<string>https://easypark-6f1ce.firebaseio.com</string>
+</dict>
+</plist>
