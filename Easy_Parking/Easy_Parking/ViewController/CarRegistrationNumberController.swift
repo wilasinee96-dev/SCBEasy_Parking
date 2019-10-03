@@ -16,10 +16,11 @@ class CarRegistrationNumberController: UIViewController {
   var provinceData: [String] = ["กรุงเทพฯ", "นครปฐม", "นนทบุรี", "จันทบุรี", "นครราชสีมา", "ขอนแก่น"]
   
   @IBAction func tappedRegisterCar(_ sender: Any) {
+    
     if let carProvince = provinceTextField.text, !carProvince.isEmpty, let carNumber = carNumberTextField.text, !carNumber.isEmpty {
-         carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
+      carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
+          
       }
-  
   }
   
   override func viewDidLoad() {
@@ -56,6 +57,4 @@ extension CarRegistrationNumberController: UIPickerViewDelegate, UIPickerViewDat
     self.provincePicker.isHidden = false
     provinceTextField.endEditing(true)
   }
-  
-  
 }

@@ -17,9 +17,9 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var tableViewControl: UITableView!
 
-  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     // Do any additional setup after loading the view.
   }
   
@@ -36,15 +36,12 @@ class ViewController: UIViewController {
   }
   
   @IBAction func Btn_ForAddCar(_ sender: Any) {
+   
     performSegue(withIdentifier: "pageRegister", sender: Any?.self)
     
   }
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //
   }
-  
-  
-  
 }
 extension ViewController: UITableViewDelegate{
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -61,8 +58,10 @@ extension ViewController: UITableViewDataSource{
     guard let cell = tableViewControl.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as? CarListTableViewCell else{
       return UITableViewCell()
     }
+    
     cell.btn_ShowQRCode = {
-      self.performSegue(withIdentifier: "pageQR", sender: Any?.self)
+         APIManager.init()
+    self.performSegue(withIdentifier: "pageQR", sender: Any?.self)
     }
     cell.carProvince.text = carItemData[indexPath.row].carProvince
     cell.carNumber.text = carItemData[indexPath.row].carRegistration
