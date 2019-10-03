@@ -7,12 +7,16 @@
 //
 
 import UIKit
-
+var walletData: Double = 23000
 class CarRegistrationNumberController: UIViewController {
   
   @IBOutlet weak var provincePicker: UIPickerView!
   @IBOutlet weak var carNumberTextField: UITextField!
   @IBOutlet weak var provinceTextField: UITextField!
+  
+  @IBOutlet weak var walletNumber: UILabel!
+  @IBOutlet weak var moneyAmount: UILabel!
+  
   var provinceData: [String] = ["กรุงเทพฯ", "นครปฐม", "นนทบุรี", "จันทบุรี", "นครราชสีมา", "ขอนแก่น"]
   
   @IBAction func tappedRegisterCar(_ sender: Any) {
@@ -20,9 +24,8 @@ class CarRegistrationNumberController: UIViewController {
       carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
       navigationController?.popViewController(animated: true)
     }
-  
   }
-  
+   // MARK: - View lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -30,6 +33,7 @@ class CarRegistrationNumberController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.provincePicker.isHidden = true
+    self.moneyAmount.text = String(format: "%.2f", walletData)
   }
   
 }

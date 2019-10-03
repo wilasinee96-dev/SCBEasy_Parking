@@ -43,6 +43,9 @@ class ViewController: UIViewController {
       let viewController = segue.destination as? CarRegistrationDetail,
       let carItem = sender as? CarItem {
       viewController.carTitle = carItem.carRegistration
+      viewController.carProvince = carItem.carProvince
+      
+      
     }
   }
   
