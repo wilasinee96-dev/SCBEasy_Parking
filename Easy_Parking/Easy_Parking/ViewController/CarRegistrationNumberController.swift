@@ -10,6 +10,8 @@ import UIKit
 var walletData: Double = 23000
 class CarRegistrationNumberController: UIViewController {
   
+  var provinceData: [String] = ["กรุงเทพมหานคร", "กระบี่", "กาญจนบุรี", "กำแพงเพชร", "ขอนแก่น", "เชียงราย", "เชียงใหม่", "นครปฐม", "ภูเก็ต", "ลำปาง", "อ่างทอง",]
+  
   @IBOutlet weak var provincePicker: UIPickerView!
   @IBOutlet weak var carNumberTextField: UITextField!
   @IBOutlet weak var provinceTextField: UITextField!
@@ -17,7 +19,6 @@ class CarRegistrationNumberController: UIViewController {
   @IBOutlet weak var walletNumber: UILabel!
   @IBOutlet weak var moneyAmount: UILabel!
   
-  var provinceData: [String] = ["กรุงเทพฯ", "นครปฐม", "นนทบุรี", "จันทบุรี", "นครราชสีมา", "ขอนแก่น"]
   
   @IBAction func tappedRegisterCar(_ sender: Any) {
     if let carProvince = provinceTextField.text, !carProvince.isEmpty, let carNumber = carNumberTextField.text, !carNumber.isEmpty {
@@ -61,6 +62,5 @@ extension CarRegistrationNumberController: UIPickerViewDelegate, UIPickerViewDat
     self.provincePicker.isHidden = false
     provinceTextField.endEditing(true)
   }
-  
   
 }
