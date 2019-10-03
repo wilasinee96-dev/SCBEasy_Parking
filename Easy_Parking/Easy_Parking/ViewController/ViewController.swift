@@ -60,7 +60,12 @@ extension ViewController: UITableViewDelegate{
   }
 
   //swipe to delete
-  
+   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == UITableViewCell.EditingStyle.delete {
+       carItemData.remove(at: indexPath.row)
+       tableViewControl.reloadData()
+     }
+   }
 }
 extension ViewController: UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
