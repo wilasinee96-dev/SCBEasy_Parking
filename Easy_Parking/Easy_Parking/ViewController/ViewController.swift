@@ -8,12 +8,10 @@
 
 import UIKit
 
-var list :[String] = ["hello","test2","test3"]
-var provinceList: [String] = ["bangkok","Non","nakon"]
 var carItemData: [CarItem] = [
-  CarItem(carRegistration: "1121", carProvince: "bangkok"),
-  CarItem(carRegistration: "3333", carProvince: "ddok"),
-  CarItem(carRegistration: "3333", carProvince: "ddok")
+  CarItem(carRegistration: "นย1121", carProvince: "กรุงเทพฯ"),
+  CarItem(carRegistration: "บห5333", carProvince: "นครปฐม"),
+  CarItem(carRegistration: "รน2343", carProvince: "สุโขทัย")
 ]
 class ViewController: UIViewController {
 
@@ -56,7 +54,7 @@ extension ViewController: UITableViewDelegate{
 }
 extension ViewController: UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return list.count
+    return carItemData.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,11 +64,8 @@ extension ViewController: UITableViewDataSource{
     cell.btn_ShowQRCode = {
       self.performSegue(withIdentifier: "pageQR", sender: Any?.self)
     }
-    cell.carProvince.text = provinceList[indexPath.row]
-    cell.carNumber.text = list[indexPath.row]
-    
-//    cell.carProvince.text = carItemData[indexPath.row].carProvince
-//    cell.carNumber.text = carItemData[indexPath.row].carRegistration
+    cell.carProvince.text = carItemData[indexPath.row].carProvince
+    cell.carNumber.text = carItemData[indexPath.row].carRegistration
   return cell
   }
   

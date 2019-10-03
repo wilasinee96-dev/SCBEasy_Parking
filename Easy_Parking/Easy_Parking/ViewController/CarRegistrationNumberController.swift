@@ -16,9 +16,10 @@ class CarRegistrationNumberController: UIViewController {
   var provinceData: [String] = ["กรุงเทพฯ", "นครปฐม", "นนทบุรี", "จันทบุรี", "นครราชสีมา", "ขอนแก่น"]
   
   @IBAction func tappedRegisterCar(_ sender: Any) {
-    list.append(carNumberTextField.text ?? "test")
-    provinceList.append(provinceTextField.text ?? "test")
-//    carItemData.append(CarItem(carRegistration: carNumberTextField.text ?? "test", carProvince: provinceTextField.text ?? "test"))
+    if let carProvince = provinceTextField.text, !carProvince.isEmpty, let carNumber = carNumberTextField.text, !carNumber.isEmpty {
+         carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
+      }
+  
   }
   
   override func viewDidLoad() {
