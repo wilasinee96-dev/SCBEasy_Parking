@@ -13,8 +13,9 @@ enum APIError: Error {
 }
 
 class APIManager {
-    
-    init() {
+  let a = ViewQRController()
+  
+  init(price:String) {
         print("API Start .. ")
          let urlString = "https://api.partners.scb/partners/sandbox/v1/oauth/token"
               print("url .. "+urlString)
@@ -76,7 +77,7 @@ class APIManager {
                                             }
                                         }
                                      
-                                    self.requestQR(accesstoken: accessToken)
+                                  self.requestQR(accesstoken: accessToken, price:price)
                                 }
                                 }catch {
                                     print(error.localizedDescription)
@@ -95,7 +96,8 @@ class APIManager {
     }
   
 
-    private func requestQR(accesstoken: String ) -> Void{
+  private func requestQR(accesstoken: String ,price:String) -> Void{
+      
         print("####################### requestQR #######################")
         //let urlString2 = "https://api.partners.scb/partners/sandbox/v1/payment/qrcode/create"
         let url = URL(string: "https://api.partners.scb/partners/sandbox/v1/payment/qrcode/create")!
@@ -106,16 +108,17 @@ class APIManager {
         request.setValue("l7f630937ca15d4bb28aeb30a487125dc5",forHTTPHeaderField:"resourceOwnerId")
         request.setValue("{{$guid}}", forHTTPHeaderField:"requestUId")
         request.setValue("EN", forHTTPHeaderField:"accept-language")
-        
+        //print("calprice: \(calPrice)")
         let parameters: [String: Any] =
         [
             "qrType": "CS",
             "merchantId": "062541946488497",
             "terminalId": "047444374717436",
             "invoice": "INVOICE",
-            "amount": "100.00",
+            "amount": price,
             "csExtExpiryTime" : "60"
         ]
+      
         let jsonData = try? JSONSerialization.data(withJSONObject: parameters)
         request.httpBody = jsonData
         
@@ -143,12 +146,13 @@ class APIManager {
                                         if let jsonP = jsonResult2?["data"] as? [String:Any]{
                                                 print(jsonP)
                                             for jsonitem in jsonP {
-                                                print("!!!!!!")
 
                                                 if(jsonitem.key == "qrImage"){
                                                     qrImage = jsonitem.value as! String
-                                                    
-                                                    print(  jsonitem.value)
+                                                    print("!!!!!!")
+                                                    print(qrImage)
+                                                  print("!!!!!!")
+
                                                 }
 
                                             }

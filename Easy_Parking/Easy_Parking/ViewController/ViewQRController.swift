@@ -8,30 +8,74 @@
 
 import UIKit
 import Firebase
-
 class ViewQRController: UIViewController {
+  
+  var calPrice: String = ""
+  var ref: DatabaseReference!
+  var iClick: Int = 0
+  var x: String = "10:10:10"
+  var y: String = "19:10:10"
+  var z: String = "1.6"
 
-    var ref: DatabaseReference!
+  @IBOutlet weak var comeInTime: UILabel!
+  @IBOutlet weak var comeOutTime: UILabel!
+  @IBOutlet weak var sumPrice: UILabel!
+  @IBAction func tapStampComeIn(_ sender: Any) {
+    
+    iClick += 1
+    if (iClick == 1){
+      x = getCurrentData1()
+      comeInTime.text = x
+    } else if (iClick == 2){
+      y = getCurrentData2()
+      comeOutTime.text = y
+    } else if (iClick == 3){
+      print("Heellso")
+      //       z = findDateDiff(time1Str: "10:10:10", time2Str: "18:10:10")
+      z = findDateDiff(time1Str: x, time2Str: y)
+      print(z)
+      
+      let calHour = getHours(mins: z)
+      calPrice =  "\(getPriceParagon(hours: calHour))"
+      APIManager.init(price: calPrice)
+      sumPrice.text = calPrice
+    
+    }else{
+      let alert = UIAlertController(title: "Complete",
+                                    message: nil,
+                                    preferredStyle: UIAlertController.Style.alert)
+      alert.addAction(UIAlertAction(title: "OK",
+                                    style: UIAlertAction.Style.cancel,
+                                    handler: {(alert: UIAlertAction!) in print("cancel")
+                                      
+      }))
+       present(alert, animated: true, completion: nil)
+      return
+    }
+  }
+  
+  func getPrice() -> String {
+    return self.calPrice
+  }
+  
+  
+  
 
-    var datetime1 = ""
-    var datetime2 = ""
-
-    func getCurrentData1(){
+    func getCurrentData1() -> String {
         let formatter = DateFormatter()
         formatter.timeStyle = .medium
         formatter.dateFormat = "HH:mm:ss"
         let str = formatter.string(from: Date())
-        datetime1 = str
-        print(str)
+        return str
+        //print(str)
     }
     
-    func getCurrentData2(){
+    func getCurrentData2() -> String{
         let formatter2 = DateFormatter()
         formatter2.timeStyle = .medium
         formatter2.dateFormat = "HH:mm:ss"
         let str2 = formatter2.string(from: Date())
-        datetime2 = str2
-        print(str2)
+      return str2
        }
     
     func findDateDiff(time1Str: String, time2Str: String) -> String {
@@ -42,7 +86,7 @@ class ViewQRController: UIViewController {
             let time2 = timeformatter.date(from: time2Str) else { return "" }
 
         //You can directly use from here if you have two dates
-        print("\(datetime1) + \(datetime2)")
+
         let interval = time2.timeIntervalSince(time1)
         let hour = interval / 3600;
         let minute = interval.truncatingRemainder(dividingBy: 3600) / 60
@@ -87,8 +131,6 @@ class ViewQRController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getCurrentData1()
-        getCurrentData2()
         let result = (findDateDiff(time1Str: "10:10:00", time2Str: "13:50:00"))
         let prices = (getHours(mins: result))
         getPriceParagon(hours: prices)
@@ -96,7 +138,7 @@ class ViewQRController: UIViewController {
         self.ref = Database.database().reference()
            // self.ref.child("AccountNum").child("PlateNum").child("Place").setValue(["Timein": "15:10:10", "Timeout": "15:30:10", "Price": "0", "Place": "สยามพารากอน"])
         for i in 1...10 {
-            self.ref.child("AccountNum").child("PlateNum").child("Bill\(i)").setValue(["Timein": "15:10:10", "Timeout": datetime1, "Price": "10", "Place": "สยามพารากอน"])
+            self.ref.child("AccountNum").child("PlateNum").child("Bill\(i)").setValue(["Timein": "15:10:10", "Timeout": "18:10:10", "Price": "10", "Place": "สยามพารากอน"])
         }
             
             //let PlateNum = Auth.auth().currentUser?.uid
