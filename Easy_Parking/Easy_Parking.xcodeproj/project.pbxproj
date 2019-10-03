@@ -113,11 +113,13 @@
 		44C6BB1C233F4C6B006FC94E /* Easy_Parking */ = {
 			isa = PBXGroup;
 			children = (
-				44C6BB1D233F4C6B006FC94E /* AppDelegate.swift */,
-				44C6BB1F233F4C6B006FC94E /* SceneDelegate.swift */,
+				7490CF8923461DBF0042938C /* Model */,
+				7490CF8823461DA30042938C /* Styled */,
 				44C6BB50233F539E006FC94E /* ViewController */,
 				44C6BB4F233F5385006FC94E /* TableviewCell */,
 				44C6BB23233F4C6B006FC94E /* Main.storyboard */,
+				44C6BB1D233F4C6B006FC94E /* AppDelegate.swift */,
+				44C6BB1F233F4C6B006FC94E /* SceneDelegate.swift */,
 				44C6BB26233F4C6C006FC94E /* Assets.xcassets */,
 				44C6BB28233F4C6C006FC94E /* LaunchScreen.storyboard */,
 				44C6BB2B233F4C6C006FC94E /* Info.plist */,
@@ -158,11 +160,25 @@
 				44C6BB51233F53E8006FC94E /* ViewQRController.swift */,
 				44C6BB53233F54B1006FC94E /* CarRegistrationNumberController.swift */,
 				74E054152340CC4E00D22706 /* SCBEasyController.swift */,
-				7409C63723425EE700767A32 /* Button.swift */,
-				7453C4A82345029A001F9A96 /* CarItem.swift */,
 				7490CF862345D2860042938C /* CarRegistrationDetail.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7490CF8823461DA30042938C /* Styled */ = {
+			isa = PBXGroup;
+			children = (
+				7409C63723425EE700767A32 /* Button.swift */,
+			);
+			path = Styled;
+			sourceTree = "<group>";
+		};
+		7490CF8923461DBF0042938C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7453C4A82345029A001F9A96 /* CarItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

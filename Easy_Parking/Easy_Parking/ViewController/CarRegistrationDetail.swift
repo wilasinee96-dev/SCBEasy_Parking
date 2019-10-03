@@ -24,14 +24,17 @@ class CarRegistrationDetail: UIViewController {
   func setCarRegistration(carRegisNumber: String, carProvince: String) {
     carNumberLabel.text = carRegisNumber
     provinceLabel.text = carProvince
-    moneyAmount.text = String(format: "%.2f", walletData)
-
+  }
+  
+  func setWalletAmount(amount: Double) {
+     moneyAmount.text = String(format: "%.2f", walletData)
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     setTitle(title: carTitle)
     setCarRegistration(carRegisNumber: carTitle, carProvince: carProvince)
+    setWalletAmount(amount: walletData)
      }
   
   
