@@ -8,12 +8,18 @@
 
 import UIKit
 
-class CarRegistationNumberController: UIViewController {
+class CarRegistrationNumberController: UIViewController {
   
   @IBOutlet weak var provincePicker: UIPickerView!
-  
+  @IBOutlet weak var carNumberTextField: UITextField!
   @IBOutlet weak var provinceTextField: UITextField!
   var provinceData: [String] = ["กรุงเทพฯ", "นครปฐม", "นนทบุรี", "จันทบุรี", "นครราชสีมา", "ขอนแก่น"]
+  
+  @IBAction func tappedRegisterCar(_ sender: Any) {
+    list.append(carNumberTextField.text ?? "test")
+    provinceList.append(provinceTextField.text ?? "test")
+//    carItemData.append(CarItem(carRegistration: carNumberTextField.text ?? "test", carProvince: provinceTextField.text ?? "test"))
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -26,13 +32,13 @@ class CarRegistationNumberController: UIViewController {
   
 }
 
-extension CarRegistationNumberController: UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+extension CarRegistrationNumberController: UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1
   }
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    provinceData.count
+    return provinceData.count
   }
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

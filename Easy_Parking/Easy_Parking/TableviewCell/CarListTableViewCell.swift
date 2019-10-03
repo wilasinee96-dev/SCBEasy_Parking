@@ -15,6 +15,9 @@ class CarListTableViewCell: UITableViewCell {
   @IBAction func btn_ShowQR(_ sender: Any) {
     btn_ShowQRCode?()
   }
+  @IBOutlet weak var carNumber: UILabel!
+  @IBOutlet weak var carProvince: UILabel!
+  
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

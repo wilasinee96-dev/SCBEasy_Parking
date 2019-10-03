@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhM-n4-ZFX">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhM-n4-ZFX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,11 +21,13 @@
                                 <color key="separatorColor" red="0.41817590589999998" green="0.21101555229999999" blue="0.73337918520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexColor" red="0.41817590589999998" green="0.21101555229999999" blue="0.73337918520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hs8-MV-1mw" customClass="Button" customModule="Easy_Parking" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="117" width="394" height="83"/>
+                                    <rect key="frame" x="0.0" y="145" width="394" height="83"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="tintColor" red="0.41960784309999999" green="0.21176470589999999" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" image="plus.circle"/>
+                                    <state key="normal" image="plus.circle" catalog="system">
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="light"/>
+                                    </state>
                                     <state key="selected" image="plus.circle.fill"/>
                                     <state key="highlighted" image="plus.circle.fill"/>
                                     <userDefinedRuntimeAttributes>
@@ -51,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="28" width="394" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TJ6-0N-ebj" id="mPd-cv-Kys">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="88.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="91Z-pO-dVs">
@@ -91,6 +90,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="carNumber" destination="pPN-Yb-t8H" id="wWp-OJ-W7X"/>
+                                            <outlet property="carProvince" destination="SJ7-Hg-nYz" id="4bW-nn-up7"/>
                                             <segue destination="6gp-Nb-g5h" kind="show" id="ay4-Nw-WdG"/>
                                         </connections>
                                     </tableViewCell>
@@ -124,7 +125,7 @@
         <!--เพิ่มรถ-->
         <scene sceneID="BQx-0R-7z8">
             <objects>
-                <viewController id="Ox1-gQ-av9" customClass="CarRegistationNumberController" customModule="Easy_Parking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ox1-gQ-av9" customClass="CarRegistrationNumberController" customModule="Easy_Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ozX-hn-e0Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,6 +190,9 @@
                                         <color key="value" red="0.41960784309999999" green="0.21176470589999999" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tappedRegisterCar:" destination="Ox1-gQ-av9" eventType="touchUpInside" id="He7-RI-pGU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -196,6 +200,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="เพิ่มรถ" id="PcC-vm-8u9"/>
                     <connections>
+                        <outlet property="carNumberTextField" destination="w9x-wz-7Fe" id="6xf-DU-A4u"/>
                         <outlet property="provincePicker" destination="B6N-fH-xQl" id="gON-Pj-lpb"/>
                         <outlet property="provinceTextField" destination="huA-fT-hY9" id="qTJ-TZ-MP9"/>
                     </connections>
@@ -208,7 +213,7 @@
         <scene sceneID="2LC-YO-bo3">
             <objects>
                 <navigationController id="GhM-n4-ZFX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="arrow.left" backIndicatorTransitionMaskImage="arrow.left" id="RuU-pJ-a7A">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="arrow.left" catalog="system" backIndicatorTransitionMaskImage="arrow.left" id="RuU-pJ-a7A">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.41960784313725491" green="0.21176470588235294" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -295,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCBEasyHomePage" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-b9-pXj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="612.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-iU-NEg">
                                 <rect key="frame" x="0.0" y="613" width="414" height="130"/>
@@ -332,8 +337,8 @@
         <image name="QrCoedImage" width="512" height="512"/>
         <image name="SCBEasyHomePage" width="1242" height="1839"/>
         <image name="SCBEasyParkImage" width="828" height="262"/>
-        <image name="arrow.left" width="64" height="48"/>
-        <image name="plus.circle" width="64" height="62"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="plus.circle" catalog="system" width="64" height="62"/>
         <image name="plus.circle.fill" width="64" height="62"/>
     </resources>
 </document>
