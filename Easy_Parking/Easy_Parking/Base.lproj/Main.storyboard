@@ -333,27 +333,27 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวลาออก" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-rM-8wK">
-                                <rect key="frame" x="50" y="760" width="100" height="21"/>
+                                <rect key="frame" x="50" y="760" width="200" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="hHR-8M-3if"/>
+                                    <constraint firstAttribute="width" constant="200" id="hHR-8M-3if"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เวลาเข้า" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5O-IG-nz2">
-                                <rect key="frame" x="50" y="729" width="100" height="21"/>
+                                <rect key="frame" x="50" y="729" width="200" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="zBe-w9-vkR"/>
+                                    <constraint firstAttribute="width" constant="200" id="zBe-w9-vkR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ราคา" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY2-ev-V16">
-                                <rect key="frame" x="50" y="791" width="100" height="21"/>
+                                <rect key="frame" x="50" y="791" width="200" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="01g-S1-w63"/>
+                                    <constraint firstAttribute="width" constant="200" id="01g-S1-w63"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -561,7 +561,7 @@
         <image name="folder" catalog="system" width="64" height="48"/>
         <image name="menubar" width="810" height="94"/>
         <image name="plus.circle" catalog="system" width="64" height="62"/>
-        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
         <image name="plus.circle.fill" width="64" height="62"/>
+        <image name="plus.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
 </document>

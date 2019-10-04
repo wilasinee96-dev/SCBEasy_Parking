@@ -31,11 +31,11 @@ class ViewQRController: UIViewController {
     self.ref = Database.database().reference()
     if (iClick == 1){
       x = getCurrentData1()
-      comeInTime.text = x
+      comeInTime.text = "เวลาเข้า: \(x)"
       self.ref.child("AccountNum").child("AccountCar").child("\(CarNumber)").child("Parking").setValue(["Timein": x, "Timeout": "", "Place": "สยามพารากอน", "Price": ""])
     } else if (iClick == 2) {
       y = getCurrentData2()
-      comeOutTime.text = y
+      comeOutTime.text = "เวลาออก: \(y)"
   self.ref.child("AccountNum").child("AccountCar").child("\(CarNumber)").child("Parking").setValue(["Timein": x, "Timeout": y, "Place": "สยามพารากอน", "Price": ""])
     } else if (iClick == 3) {
       
@@ -46,11 +46,26 @@ class ViewQRController: UIViewController {
       calPrice =  getPriceParagon(hours: calHour)
       let calSum : String = "\(calPrice)"
       APIManager.init(price: calSum)
-      sumPrice.text = calSum
-      self.ref.child("AccountNum").child("AccountCar").child("\(1)").child("Parking").setValue(["Timein": x, "Timeout": y, "Place": "สยามพารากอน", "Price": "\(calSum)"])
+      sumPrice.text = "ราคา: \(calSum)"
+      if(calSum == "0"){
+        let alert = UIAlertController(title: "จอดฟรี 2 ชั่วโมงแรก",
+                                       message: nil,
+                                       preferredStyle: UIAlertController.Style.alert)
+         
+         alert.addAction(UIAlertAction(title: "OK",
+                                       style: UIAlertAction.Style.cancel,
+                                       handler: {(alert: UIAlertAction!) in
+                                         self.navigationController?.popViewController(animated: true)
+                                         
+         }))
+        
+         
+          present(alert, animated: true, completion: nil)
+      }; self.ref.child("AccountNum").child("AccountCar").child("\(1)").child("Parking").setValue(["Timein": x, "Timeout": y, "Place": "สยามพารากอน", "Price": "\(calSum)"])
+      
     
     }else{
-      let alert = UIAlertController(title: "Complete",
+      let alert = UIAlertController(title: "เสียค่าจอดรถ \(calPrice) บาท",
                                     message: nil,
                                     preferredStyle: UIAlertController.Style.alert)
       
