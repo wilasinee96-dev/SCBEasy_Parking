@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
+
 var walletData: Double = 23000
 class CarRegistrationNumberController: UIViewController {
+  var ref: DatabaseReference!
   
   var provinceData: [String] = ["กรุงเทพมหานคร", "กระบี่", "กาญจนบุรี", "กำแพงเพชร", "ขอนแก่น", "เชียงราย", "เชียงใหม่", "นครปฐม", "ภูเก็ต", "ลำปาง", "อ่างทอง",]
   
@@ -23,12 +26,15 @@ class CarRegistrationNumberController: UIViewController {
   @IBAction func tappedRegisterCar(_ sender: Any) {
     if let carProvince = provinceTextField.text, !carProvince.isEmpty, let carNumber = carNumberTextField.text, !carNumber.isEmpty {
       carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
+      self.ref.child("AccountNum").child(carProvince).child(carNumber)
       navigationController?.popViewController(animated: true)
     }
   }
    // MARK: - View lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.ref = Database.database().reference()
+    
   }
   
   override func viewWillAppear(_ animated: Bool) {

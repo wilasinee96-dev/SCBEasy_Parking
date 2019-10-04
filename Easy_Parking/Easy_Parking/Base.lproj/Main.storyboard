@@ -328,7 +328,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLs-gL-vyS">
                                 <rect key="frame" x="44" y="220" width="313" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="IN"/>
                                 <connections>
                                     <action selector="tapStampComeIn:" destination="ZfW-yR-xH5" eventType="touchUpInside" id="kkd-2M-MqQ"/>
                                 </connections>

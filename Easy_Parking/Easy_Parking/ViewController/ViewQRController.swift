@@ -8,14 +8,19 @@
 
 import UIKit
 import Firebase
+
+var x: String = "10:10:10"
+var y: String = "19:10:10"
+var z: String = "1.6"
+var calPrice: Int = 100
+
 class ViewQRController: UIViewController {
   
-  var calPrice: String = ""
   var ref: DatabaseReference!
   var iClick: Int = 0
-  var x: String = "10:10:10"
-  var y: String = "19:10:10"
-  var z: String = "1.6"
+//  var x: String = "10:10:10"
+//  var y: String = "19:10:10"
+//  var z: String = "1.6"
 
   @IBOutlet weak var comeInTime: UILabel!
   @IBOutlet weak var comeOutTime: UILabel!
@@ -24,39 +29,56 @@ class ViewQRController: UIViewController {
     
     iClick += 1
     if (iClick == 1){
-      x = getCurrentData1()
+//      x = getCurrentData1()
       comeInTime.text = x
-    } else if (iClick == 2){
-      y = getCurrentData2()
+    } else if (iClick == 2) {
+//      y = getCurrentData2()
       comeOutTime.text = y
-    } else if (iClick == 3){
-      print("Heellso")
-      //       z = findDateDiff(time1Str: "10:10:10", time2Str: "18:10:10")
+    } else if (iClick == 3) {
       z = findDateDiff(time1Str: x, time2Str: y)
       print(z)
       
       let calHour = getHours(mins: z)
-      calPrice =  "\(getPriceParagon(hours: calHour))"
-      APIManager.init(price: calPrice)
-      sumPrice.text = calPrice
+      calPrice =  getPriceParagon(hours: calHour)
+      let calSum : String = "\(calPrice)"
+      APIManager.init(price: calSum)
+      sumPrice.text = calSum
     
     }else{
       let alert = UIAlertController(title: "Complete",
                                     message: nil,
                                     preferredStyle: UIAlertController.Style.alert)
+      
+      //      let imageView = UIImageView()
+      let imageName = "QrCodeIcon"
+      let image = UIImage(named: imageName)
+      let imageView = UIImageView(image: image!)
+      imageView.frame = CGRect(x: 35, y: 50, width: 200, height: 200)
+      
+      //           imageView.image = #imageLiteral(resourceName: "QrCoedImage")
+      alert.view.addSubview(imageView)
+      let height = NSLayoutConstraint(item: alert.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 320)
+      let width = NSLayoutConstraint(item: alert.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250)
+      alert.view.addConstraint(height)
+      alert.view.addConstraint(width)
+      
       alert.addAction(UIAlertAction(title: "OK",
                                     style: UIAlertAction.Style.cancel,
                                     handler: {(alert: UIAlertAction!) in print("cancel")
                                       
       }))
+     
+      
        present(alert, animated: true, completion: nil)
+      walletData = walletData - Double(calPrice)
+      print("wallet now \(walletData)")
       return
     }
   }
   
-  func getPrice() -> String {
-    return self.calPrice
-  }
+//  func getPrice() -> Int {
+//    return self.calPrice
+//  }
   
   
   
