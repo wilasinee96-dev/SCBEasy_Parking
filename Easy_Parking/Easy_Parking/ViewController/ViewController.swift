@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 var carItemData: [CarItem] = [
-  CarItem(carRegistration: "นย1121", carProvince: "กรุงเทพฯ"),
-  CarItem(carRegistration: "บห5333", carProvince: "นครปฐม"),
-  CarItem(carRegistration: "รน2343", carProvince: "สุโขทัย")
+//  CarItem(carRegistration: "นย1121", carProvince: "กรุงเทพฯ"),
+//  CarItem(carRegistration: "บห5333", carProvince: "นครปฐม"),
+//  CarItem(carRegistration: "รน2343", carProvince: "สุโขทัย")
+  
 ]
 class ViewController: UIViewController {
 
+  var ref: DatabaseReference!
   @IBOutlet weak var tableViewControl: UITableView!
 
+  func setCarDatabase() {
+    self.ref = Database.database().reference()
+//    self.ref.child("AccountNum").child("AccountCar").child("CarNumber").setValue(["Plate":"อจ2543", "province": "ปราจีนบุรี"])
+//    self.ref.child("AccountNum").child("AccountCar").child("CarNumber").child("Parking").setValue(["Timein": "10:10:10", "Timeout": "13:10:10", "Place": "สยามพารากอน", "Price": "100.00"])
+//    
+//      let CarNumber = Auth.auth().currentUser?.uid
+//    ref.child("AccountNum").child("AccountCar").child("CarNumber").observeSingleEvent(of: .value, with: { (snapshot) in
+//          // Get user value
+//          let value = snapshot.value as? NSDictionary
+//          print("value \(value)")
+//
+//          let CarNumber2 = value?["Plate"] as? String ?? ""
+//            print("carNumber \(CarNumber2)")
+//          }) { (error) in
+//            print(error.localizedDescription)
+//        }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setCarDatabase()
     // Do any additional setup after loading the view.
   }
   

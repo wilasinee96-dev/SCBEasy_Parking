@@ -20,9 +20,9 @@
 		44C6BB56233F6365006FC94E /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C6BB55233F6365006FC94E /* CarListTableViewCell.swift */; };
 		7409C63823425EE700767A32 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409C63723425EE700767A32 /* Button.swift */; };
 		7453C4A92345029A001F9A96 /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453C4A82345029A001F9A96 /* CarItem.swift */; };
+		745F21CA2346E1C5008606CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 745F21C92346E1C5008606CF /* GoogleService-Info.plist */; };
 		7490CF872345D2860042938C /* CarRegistrationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490CF862345D2860042938C /* CarRegistrationDetail.swift */; };
 		7490CF8F23464F8A0042938C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490CF8E23464F8A0042938C /* APIManager.swift */; };
-		74ABD35F2346550B00CFECAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74ABD35E2346550B00CFECAD /* GoogleService-Info.plist */; };
 		74E054162340CC4E00D22706 /* SCBEasyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E054152340CC4E00D22706 /* SCBEasyController.swift */; };
 		8AA64F3C1A6D68DC5CBD6FFC /* Pods_Easy_Parking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A8A069D5C054650724DF04 /* Pods_Easy_Parking.framework */; };
 		B0DD9A8B87020F78B983E376 /* Pods_Easy_ParkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100B263188714983EE93F874 /* Pods_Easy_ParkingTests.framework */; };
@@ -70,9 +70,9 @@
 		5FFC34785C214D24478EBD37 /* Pods-Easy_ParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_ParkingTests.release.xcconfig"; path = "Target Support Files/Pods-Easy_ParkingTests/Pods-Easy_ParkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		7409C63723425EE700767A32 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7453C4A82345029A001F9A96 /* CarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItem.swift; sourceTree = "<group>"; };
+		745F21C92346E1C5008606CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7490CF862345D2860042938C /* CarRegistrationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRegistrationDetail.swift; sourceTree = "<group>"; };
 		7490CF8E23464F8A0042938C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		74ABD35E2346550B00CFECAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74E054152340CC4E00D22706 /* SCBEasyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBEasyController.swift; sourceTree = "<group>"; };
 		7E993F44CBBB4DE8820C34C5 /* Pods-Easy_Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_Parking.release.xcconfig"; path = "Target Support Files/Pods-Easy_Parking/Pods-Easy_Parking.release.xcconfig"; sourceTree = "<group>"; };
 		CE512F76FE1DEC813EE12044 /* Pods-Easy_ParkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy_ParkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Easy_ParkingUITests/Pods-Easy_ParkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		44C6BB1C233F4C6B006FC94E /* Easy_Parking */ = {
 			isa = PBXGroup;
 			children = (
-				74ABD35E2346550B00CFECAD /* GoogleService-Info.plist */,
+				745F21C92346E1C5008606CF /* GoogleService-Info.plist */,
 				7490CF8D23464F6D0042938C /* Service */,
 				7490CF8923461DBF0042938C /* Model */,
 				7490CF8823461DA30042938C /* Styled */,
@@ -344,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C6BB2A233F4C6C006FC94E /* LaunchScreen.storyboard in Resources */,
-				74ABD35F2346550B00CFECAD /* GoogleService-Info.plist in Resources */,
+				745F21CA2346E1C5008606CF /* GoogleService-Info.plist in Resources */,
 				44C6BB27233F4C6C006FC94E /* Assets.xcassets in Resources */,
 				44C6BB25233F4C6B006FC94E /* Main.storyboard in Resources */,
 			);

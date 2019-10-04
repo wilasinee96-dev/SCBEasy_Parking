@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 var walletData: Double = 23000
+var CarNumber = 0;
 class CarRegistrationNumberController: UIViewController {
   var ref: DatabaseReference!
   
@@ -24,9 +25,14 @@ class CarRegistrationNumberController: UIViewController {
   
   
   @IBAction func tappedRegisterCar(_ sender: Any) {
+     CarNumber = CarNumber+1
     if let carProvince = provinceTextField.text, !carProvince.isEmpty, let carNumber = carNumberTextField.text, !carNumber.isEmpty {
       carItemData.append(CarItem(carRegistration: carNumber, carProvince: carProvince))
-      self.ref.child("AccountNum").child(carProvince).child(carNumber)
+   
+     
+      let numcar = "\(CarNumber)"
+    self.ref.child("AccountNum").child("AccountCar").child(numcar).setValue(["Plate":carNumber, "province": carProvince])
+     
       navigationController?.popViewController(animated: true)
     }
   }

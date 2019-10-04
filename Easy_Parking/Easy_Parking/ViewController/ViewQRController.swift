@@ -28,13 +28,17 @@ class ViewQRController: UIViewController {
   @IBAction func tapStampComeIn(_ sender: Any) {
     
     iClick += 1
+    self.ref = Database.database().reference()
     if (iClick == 1){
-//      x = getCurrentData1()
+      x = getCurrentData1()
       comeInTime.text = x
+      self.ref.child("AccountNum").child("AccountCar").child("\(CarNumber)").child("Parking").setValue(["Timein": x, "Timeout": "", "Place": "สยามพารากอน", "Price": ""])
     } else if (iClick == 2) {
-//      y = getCurrentData2()
+      y = getCurrentData2()
       comeOutTime.text = y
+  self.ref.child("AccountNum").child("AccountCar").child("\(CarNumber)").child("Parking").setValue(["Timein": x, "Timeout": y, "Place": "สยามพารากอน", "Price": ""])
     } else if (iClick == 3) {
+      
       z = findDateDiff(time1Str: x, time2Str: y)
       print(z)
       
@@ -43,6 +47,7 @@ class ViewQRController: UIViewController {
       let calSum : String = "\(calPrice)"
       APIManager.init(price: calSum)
       sumPrice.text = calSum
+      self.ref.child("AccountNum").child("AccountCar").child("\(1)").child("Parking").setValue(["Timein": x, "Timeout": y, "Place": "สยามพารากอน", "Price": "\(calSum)"])
     
     }else{
       let alert = UIAlertController(title: "Complete",
@@ -64,7 +69,8 @@ class ViewQRController: UIViewController {
       
       alert.addAction(UIAlertAction(title: "OK",
                                     style: UIAlertAction.Style.cancel,
-                                    handler: {(alert: UIAlertAction!) in print("cancel")
+                                    handler: {(alert: UIAlertAction!) in
+                                      self.navigationController?.popViewController(animated: true)
                                       
       }))
      
@@ -159,9 +165,9 @@ class ViewQRController: UIViewController {
         // Do any additional setup after loading the view.
         self.ref = Database.database().reference()
            // self.ref.child("AccountNum").child("PlateNum").child("Place").setValue(["Timein": "15:10:10", "Timeout": "15:30:10", "Price": "0", "Place": "สยามพารากอน"])
-        for i in 1...10 {
-            self.ref.child("AccountNum").child("PlateNum").child("Bill\(i)").setValue(["Timein": "15:10:10", "Timeout": "18:10:10", "Price": "10", "Place": "สยามพารากอน"])
-        }
+//        for i in 1...10 {
+//            self.ref.child("AccountNum").child("PlateNum").child("Bill\(i)").setValue(["Timein": "15:10:10", "Timeout": "18:10:10", "Price": "10", "Place": "สยามพารากอน"])
+//        }
             
             //let PlateNum = Auth.auth().currentUser?.uid
         //    ref.child("AccountNum").child("PlateNum").child("Place").child("Time").observeSingleEvent(of: .value, with: { (snapshot) in
